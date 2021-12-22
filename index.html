@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste BNE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center">
+        <div class="row">
+            <div class="col-12 py-3 text-center">
+                <h1><strong>HOME OFFICE</strong></h1>
+            </div>
+
+
+            <div class="col-12 base-form">
+                <form class="d-flex" action="PayslipServlet" method="get"></form>
+                <p class="text-center"><strong>Temos algumas perguntas que nos ajudarão a entender o que você
+                        precisa.</strong></p>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="Nome" class="title">Nome</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nome">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="email" class="title">Email</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="Nome" class="title">Você trabalha em qual cômodo?</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <select class="form-control">
+                            <option>Quarto</option>
+                            <option>Sala</option>
+                            <option>Escritório</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label for="Nome" class="title">De 0 a 10, como você se sente?</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="Nome">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label class="">Qual seu horário mais produtivo?</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="manha" id="manha" value="option1">
+                            <label class="form-check-label" for="manha">
+                                Manhã
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tarde" id="tarde" value="option2">
+                            <label class="form-check-label" for="tarde">
+                                Tarde
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="noite" id="noite" value="option3">
+                            <label class="form-check-label" for="noite">
+                                Noite
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label class="">Como está se sentindo?<br>
+                                (Todas podem ser marcados)</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="bem" id="bem" value="option1">
+                            <label class="form-check-label" for="bem">
+                                Bem
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="confuso" id="confuso" value="option2">
+                            <label class="form-check-label" for="confuso">
+                                Confuso
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="cansado" id="cansado" value="option3">
+                            <label class="form-check-label" for="cansado">
+                                Cansado
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="empolgado" id="empolgado"
+                                value="option4">
+                            <label class="form-check-label" for="empolgado">
+                                Empolgado
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="entusiasmado" id="entusiasmado"
+                                value="option5">
+                            <label class="form-check-label" for="entusiasmado">
+                                Entusiasmado
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label class="">Descreva sua experiência com home office.</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <textarea class="form-control" id="homeoffice" rows="3"
+                            placeholder="Descreva sua experiência aqui..."></textarea>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center d-flex mt-5">
+                    <button type="submit" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-form"
+                        onClick="pr()">Enviar</button>
+                </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="modal-form" tabindex="-1" aria-labelledby="modal-form" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="modal-body">
+                    Obrigado <strong><span id="resultado"></span></strong>, agradecemos sua resposta, uma cópia das
+                    respostas foi
+                    enviada para o <strong><span id="resultado2"></span></strong>.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function pr() {
+            document.getElementById("resultado").innerHTML = document.getElementById('nome').value;
+            document.getElementById("resultado2").innerHTML = document.getElementById('email').value;
+        }
+    </script>
+
+</body>
+
+</html>

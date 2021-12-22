@@ -1,0 +1,40 @@
+body {
+  background-color: $cor-fundo-full;
+}
+
+.base-form {
+  background-color: $cor-box-form;
+  padding: 30px;
+
+  p {
+    font-size: 15px;
+  }
+
+  input {
+    font-family: $font-campos;
+
+  }
+}
+
+.form-group {
+  text-align: right;
+}
+
+.close {
+  text-align: right;
+  padding-right: 8px !important;
+}
+
+
+@media (max-width:767.98px) {
+  .base-form {
+    input, select {
+      margin-bottom:15px;
+    }
+  }
+
+  .form-group {
+    text-align: left;
+    margin-bottom:0px;
+  }
+}
