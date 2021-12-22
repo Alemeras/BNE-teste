@@ -10,7 +10,16 @@ body {
     font-size: 15px;
   }
 
+  select {
+    width:180px;
+    font-family: $font-campos;
+  }
+
   input {
+    font-family: $font-campos;
+  }
+
+  textarea {
     font-family: $font-campos;
 
   }
@@ -28,6 +37,11 @@ body {
 
 @media (max-width:767.98px) {
   .base-form {
+
+    select {
+      width:100%;
+    }
+
     input, select {
       margin-bottom:15px;
     }
